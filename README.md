@@ -1,3 +1,13 @@
+This fork added two scripts:
+./filter_video.py
+./facefusion/frame_filter.py
+
+And the usage is:
+
+ python filter_video.py --reference ./1.jpg --target /Users/keda/Downloads/output/2/test.mp4 --output ./output.mp4 --face-detector-score 0.5 --face-landmarker-score 0.5
+
+you can adjust the values of both --face-detector-score and --face-landmarker-score to fit your needs.
+
 FaceFusion
 ==========
 
