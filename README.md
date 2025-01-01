@@ -4,9 +4,10 @@ This fork added two scripts:
 
 And the usage is:
 
- python filter_video.py --reference ./1.jpg --target /Users/keda/Downloads/output/2/test.mp4 --output ./output.mp4 --face-detector-score 0.5 --face-landmarker-score 0.5
+python filter_video.py --reference 1.jpg --target test.mp4 --output output.mp4 --face-detector-score 0.5 --horizontal-threshold 0.7 --vertical-threshold 0.2 --occlusion-threshold 0.92
 
-you can adjust the values of both --face-detector-score and --face-landmarker-score to fit your needs.
+you can adjust the values of --face-detector-score, --horizontal-threshold, --vertical-threshold, --occlusion-threshold to fit your needs.
+occlusion threshold is the score of less occlusion, the higher the score, the less occlusion. It adds a penalty to the score from eyes, nose, and lips and use 1 minus the sum to obtain the final score.
 
 FaceFusion
 ==========
